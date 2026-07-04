@@ -224,6 +224,14 @@ h3 {
   font-weight: 700;
 }
 
+.hero-subtitle span {
+  display: block;
+}
+
+.hero-subtitle span + span {
+  margin-top: 2px;
+}
+
 .keywords {
   display: flex;
   flex-wrap: wrap;
@@ -600,6 +608,21 @@ details.bibtex pre {
 .contact-row dd {
   margin: 0;
   color: var(--muted);
+}
+
+.guestbook-panel {
+  padding: 22px;
+}
+
+.guestbook-panel p {
+  max-width: 780px;
+}
+
+.comment-box {
+  margin-top: 22px;
+  min-height: 260px;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
 }
 
 .site-footer {

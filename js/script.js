@@ -45,6 +45,7 @@ const zhTranslations = {
   "Projects | Shun Yang": "研究项目 | 杨顺",
   "Gallery | Shun Yang": "科研图集 | 杨顺",
   "Contact | Shun Yang": "联系方式 | 杨顺",
+  "Guestbook | Shun Yang": "留言板 | 杨顺",
   "Seismic Oceanography": "地震海洋学",
   "Home": "首页",
   "Research": "研究",
@@ -53,8 +54,11 @@ const zhTranslations = {
   "Projects": "项目",
   "Gallery": "图集",
   "Contact": "联系",
+  "Guestbook": "留言",
   "Personal Academic Homepage": "个人学术主页",
   "Engineer | Marine Geophysics | Seismic Oceanography": "工程师 | 海洋地球物理 | 地震海洋学",
+  "Ph.D. | Engineer": "博士 | 工程师",
+  "Marine Geophysics | Seismic Oceanography": "海洋地球物理 | 地震海洋学",
   "Marine Geophysics": "海洋地球物理",
   "Physical Oceanography": "物理海洋学",
   "Mesoscale Eddies": "中尺度涡",
@@ -154,6 +158,10 @@ const zhTranslations = {
   "Download the current CV and selected first-author journal articles.": "下载当前简历和代表性一作期刊论文。",
   "Publication List": "论文列表",
   "Guangzhou Marine Geological Survey, Guangzhou, China": "广州海洋地质调查局，中国广州",
+  "Messages and academic comments": "留言与学术评论",
+  "Questions, comments, and collaboration notes related to seismic oceanography, marine geophysics, physical oceanography, and ocean mixing are welcome.": "欢迎围绕地震海洋学、海洋地球物理、物理海洋学和海洋混合留下问题、评论和合作交流信息。",
+  "Leave a Message": "留下留言",
+  "Comments are connected to the public GitHub repository for this website, so replies can be followed and preserved with the project.": "留言连接到本网站的公开 GitHub 仓库，便于后续回复和保存。",
   "© 2026 Shun Yang. Seismic Oceanography & Marine Geophysics.": "© 2026 杨顺。地震海洋学与海洋地球物理。"
 };
 

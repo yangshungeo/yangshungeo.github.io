@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact information for Shun Yang.">
-  <title>Contact | Shun Yang</title>
+  <meta name="description" content="Guestbook and comments for Shun Yang's personal academic website.">
+  <title>Guestbook | Shun Yang</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,8 +20,8 @@
           <a href="awards.html">Awards</a>
           <a href="projects.html">Projects</a>
           <a href="gallery.html">Gallery</a>
-          <a class="active" href="contact.html">Contact</a>
-          <a href="guestbook.html">Guestbook</a>
+          <a href="contact.html">Contact</a>
+          <a class="active" href="guestbook.html">Guestbook</a>
         </div>
         <button class="language-toggle" type="button" data-lang-toggle aria-label="Switch language">中文</button>
         <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
@@ -32,34 +32,26 @@
   <main id="main">
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">Contact</p>
-        <h1>Academic communication and collaboration</h1>
-        <p>I welcome academic communication and potential collaboration in seismic oceanography, marine geophysics, physical oceanography, and ocean mixing.</p>
+        <p class="eyebrow">Guestbook</p>
+        <h1>Messages and academic comments</h1>
+        <p>Questions, comments, and collaboration notes related to seismic oceanography, marine geophysics, physical oceanography, and ocean mixing are welcome.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container grid two">
-        <article class="card">
-          <div class="card-body">
-            <h2>Contact Information</h2>
-            <dl class="contact-list">
-              <div class="contact-row"><dt>Email</dt><dd><a href="mailto:yangshun0921@outlook.com">yangshun0921@outlook.com</a></dd></div>
-              <div class="contact-row"><dt>Institution</dt><dd>Guangzhou Marine Geological Survey, Guangzhou, China</dd></div>
-              <div class="contact-row"><dt>ResearchGate</dt><dd><a href="https://www.researchgate.net/profile/Shun-Yang">researchgate.net/profile/Shun-Yang</a></dd></div>
-              <div class="contact-row"><dt>ORCID</dt><dd><a href="https://orcid.org/0000-0002-6008-4782">0000-0002-6008-4782</a></dd></div>
-              <div class="contact-row"><dt>GitHub</dt><dd><a href="https://github.com/yangshungeo">github.com/yangshungeo</a></dd></div>
-            </dl>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-body">
-            <h2>Documents</h2>
-            <p>Download the current CV and selected first-author journal articles.</p>
-            <div class="actions">
-              <a class="button" href="assets/Shun_Yang_CV.pdf">Download CV</a>
-              <a class="button secondary" href="publications.html">Publication List</a>
-            </div>
+      <div class="container">
+        <article class="card guestbook-panel">
+          <h2>Leave a Message</h2>
+          <p>Comments are connected to the public GitHub repository for this website, so replies can be followed and preserved with the project.</p>
+          <div class="comment-box">
+            <script src="https://utteranc.es/client.js"
+              repo="yangshungeo/yangshungeo.github.io"
+              issue-term="pathname"
+              label="guestbook"
+              theme="github-light"
+              crossorigin="anonymous"
+              async>
+            </script>
           </div>
         </article>
       </div>
