@@ -162,6 +162,8 @@ const zhTranslations = {
   "Questions, comments, and collaboration notes related to seismic oceanography, marine geophysics, physical oceanography, and ocean mixing are welcome.": "欢迎围绕地震海洋学、海洋地球物理、物理海洋学和海洋混合留下问题、评论和合作交流信息。",
   "Leave a Message": "留下留言",
   "Comments are connected to the public GitHub repository for this website, so replies can be followed and preserved with the project.": "留言连接到本网站的公开 GitHub 仓库，便于后续回复和保存。",
+  "Visits": "访问量",
+  "Visitors": "访客数",
   "© 2026 Shun Yang. Seismic Oceanography & Marine Geophysics.": "© 2026 杨顺。地震海洋学与海洋地球物理。"
 };
 

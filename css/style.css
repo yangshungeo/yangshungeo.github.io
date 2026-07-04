@@ -681,8 +681,26 @@ details.bibtex pre {
   gap: 18px;
 }
 
+.footer-main {
+  display: grid;
+  gap: 6px;
+}
+
 .site-footer p {
   margin: 0;
+}
+
+.visitor-counter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.88rem;
+}
+
+.visitor-counter strong {
+  color: #fff;
+  font-weight: 800;
 }
 
 .footer-links {
