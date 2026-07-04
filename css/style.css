@@ -177,7 +177,14 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(244, 248, 252, 0.84);
+  background: linear-gradient(
+    90deg,
+    rgba(244, 248, 252, 0.94) 0%,
+    rgba(244, 248, 252, 0.8) 46%,
+    rgba(244, 248, 252, 0.56) 100%
+  );
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
 }
 
 .hero-content {
@@ -312,6 +319,32 @@ h3 {
   border-bottom: 1px solid var(--border);
 }
 
+.home-band {
+  border-top: 1px solid rgba(217, 226, 236, 0.86);
+}
+
+.hero + .home-band {
+  border-top: 0;
+}
+
+.home-band-education {
+  background: #fff;
+}
+
+.home-band-research {
+  background: #f4f8fc;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-band-stats {
+  background: #eaf2fb;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-band-publications {
+  background: #fbfdff;
+}
+
 .section-header {
   max-width: 820px;
   margin-bottom: 26px;
@@ -320,6 +353,40 @@ h3 {
 .section-header p {
   margin: 10px 0 0;
   color: var(--muted);
+}
+
+.education-list {
+  display: grid;
+  gap: 20px;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.education-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.education-main p {
+  margin: 4px 0 0;
+}
+
+.education-school {
+  color: var(--primary-dark);
+  font-size: 1.04rem;
+}
+
+.education-date {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .grid {
@@ -770,7 +837,14 @@ details.bibtex pre {
   }
 
   .hero::before {
-    background: rgba(244, 248, 252, 0.91);
+    background: linear-gradient(
+      90deg,
+      rgba(244, 248, 252, 0.95) 0%,
+      rgba(244, 248, 252, 0.86) 58%,
+      rgba(244, 248, 252, 0.72) 100%
+    );
+    -webkit-backdrop-filter: blur(1.2px);
+    backdrop-filter: blur(1.2px);
   }
 
   h1 {
@@ -796,8 +870,13 @@ details.bibtex pre {
 
   .research-item,
   .publication,
-  .award-card {
+  .award-card,
+  .education-item {
     grid-template-columns: 1fr;
+  }
+
+  .education-date {
+    white-space: normal;
   }
 
   .pub-thumb {
