@@ -138,7 +138,7 @@ const zhTranslations = {
   "This project studies thermohaline staircases and their disruption by subsurface mesoscale eddies in the eastern Caribbean Sea. The work combines seismic oceanography and hydrographic observations to reveal fine-scale ocean structures.": "该项目研究东加勒比海温盐阶梯及其受次表层中尺度涡扰动的过程，结合地震海洋学和水文观测揭示细尺度海洋结构。",
   "These studies use marine seismic survey data to investigate submesoscale eddies, fronts, and mode-2 internal solitary waves near Central America, the Antarctic Peninsula, and adjacent regions.": "这些研究利用海洋地震调查资料分析中美洲、南极半岛及邻近海域的亚中尺度涡、锋面和二阶模态内孤立波。",
   "Research publications and visual materials": "科研论文与可视化材料",
-  "This first gallery version uses the available first-author publication PDFs as visual anchors. Dedicated seismic sections, maps, and workflow diagrams can be added later when the source figures are ready.": "当前图集版本先使用已有一作论文 PDF 首页作为视觉素材。后续可在正式科研图件准备好后加入地震剖面、研究区地图和流程图。",
+  "This gallery highlights representative research figures from selected first-author publications, with first-page paper screenshots where dedicated figure artwork is not yet available.": "本图集展示代表性一作论文中的主要科研图件；暂未提供专门图件的论文则使用论文首页截图。",
   "Thermohaline staircases in the Caribbean Sea": "加勒比海温盐阶梯",
   "First-author article on disruptions in thermohaline staircases caused by subsurface mesoscale eddies.": "关于次表层中尺度涡导致温盐阶梯扰动的一作论文。",
   "Enhanced mixing at Arctic eddy edges": "北极涡旋边缘增强混合",

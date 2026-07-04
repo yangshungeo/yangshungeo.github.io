@@ -344,6 +344,7 @@ h3 {
   border-radius: 8px;
   background: #fff;
   box-shadow: var(--shadow);
+  min-width: 0;
 }
 
 .card-body {
@@ -586,6 +587,47 @@ details.bibtex pre {
   border-bottom: 1px solid var(--border);
 }
 
+.figure-card a {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.research-figure img,
+.paper-page img {
+  background: #fff;
+  object-fit: contain;
+}
+
+.figure-set {
+  display: grid;
+  gap: 1px;
+  background: var(--border);
+  border-bottom: 1px solid var(--border);
+  min-width: 0;
+}
+
+.figure-set.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.figure-set.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.figure-set img {
+  border-bottom: 0;
+}
+
+.figure-set a,
+.figure-set img {
+  min-width: 0;
+}
+
+.paper-page img {
+  object-position: top center;
+}
+
 .contact-list {
   display: grid;
   gap: 12px;
@@ -729,6 +771,11 @@ details.bibtex pre {
     grid-template-columns: 1fr;
   }
 
+  .figure-set.two,
+  .figure-set.three {
+    grid-template-columns: 1fr;
+  }
+
   .research-item,
   .publication,
   .award-card {
@@ -761,7 +808,13 @@ details.bibtex pre {
   }
 
   h1 {
-    font-size: 2.05rem;
+    font-size: 1.86rem;
+  }
+
+  .page-hero h1,
+  .page-hero p,
+  .card-body h3 {
+    overflow-wrap: break-word;
   }
 
   .actions {
