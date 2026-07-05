@@ -73,6 +73,8 @@ const zhTranslations = {
   "Bachelor of Engineering in Exploration Geophysics": "勘查地球物理工学学士",
   "Tongji University": "同济大学",
   "China University of Geosciences": "中国地质大学",
+  "Shanghai, China": "中国上海",
+  "Wuhan, China": "中国武汉",
   "Field of study: Marine Geophysics.": "研究方向：海洋地球物理。",
   "Field of study: Exploration Geophysics.": "研究方向：勘查地球物理。",
   "Sep 2019 - May 2025": "2019年9月 - 2025年5月",

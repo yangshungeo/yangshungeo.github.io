@@ -378,8 +378,24 @@ h3 {
 }
 
 .education-school {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
   color: var(--primary-dark);
   font-size: 1.04rem;
+  font-style: normal;
+}
+
+.education-school a {
+  color: var(--primary);
+  font-style: normal;
+}
+
+.education-location {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-style: normal;
 }
 
 .education-date {
