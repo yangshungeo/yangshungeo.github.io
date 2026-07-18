@@ -4,8 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Publications by Shun Yang in seismic oceanography, marine geophysics, eddies, and ocean mixing.">
+  <meta name="theme-color" content="#082b66">
   <title>Publications | Shun Yang</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="canonical" href="https://yangshungeo.github.io/publications.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Publications | Shun Yang">
+  <meta property="og:description" content="Journal articles, preprints, posters, and conference contributions by Shun Yang.">
+  <meta property="og:url" content="https://yangshungeo.github.io/publications.html">
+  <meta property="og:image" content="https://yangshungeo.github.io/images/profile.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/style.css?v=20260718-3">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -13,10 +22,10 @@
     <nav class="nav" aria-label="Primary navigation">
       <a class="brand" href="index.html"><strong>Shun Yang</strong><span>Seismic Oceanography</span></a>
       <div class="nav-right">
-        <div class="nav-links">
+        <div class="nav-links" id="primary-navigation">
           <a href="index.html">Home</a>
           <a href="research.html">Research</a>
-          <a class="active" href="publications.html">Publications</a>
+          <a class="active" href="publications.html" aria-current="page">Publications</a>
           <a href="awards.html">Awards</a>
           <a href="projects.html">Projects</a>
           <a href="gallery.html">Gallery</a>
@@ -24,7 +33,7 @@
           <a href="guestbook.html">Guestbook</a>
         </div>
         <button class="language-toggle" type="button" data-lang-toggle aria-label="Switch language">中文</button>
-        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span></button>
       </div>
     </nav>
   </header>
@@ -33,19 +42,44 @@
     <section class="page-hero">
       <div class="container">
         <p class="eyebrow">Publications</p>
-        <h1>Journal articles, preprints, posters, and conference contributions</h1>
-        <p>Selected publications are listed in reverse chronological order. Main topics include seismic oceanography, mesoscale eddies, enhanced mixing, thermohaline staircases, and internal waves.</p>
+        <h1>Journal articles, preprints, posters, and conference contributions on seismic oceanography, mesoscale eddies, thermohaline staircases, internal waves, and ocean mixing.</h1>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="section-header">
-          <h2>Selected First-Author Publications</h2>
-          <p>PDF files are available for the five first-author journal papers included in the local materials folder.</p>
+        <div class="publication-controls" data-publication-controls>
+          <label class="publication-control search-control" for="publication-search">
+            <span>Search publications</span>
+            <input id="publication-search" type="search" placeholder="Title, author, journal, or year" autocomplete="off">
+          </label>
+          <label class="publication-control" for="publication-type">
+            <span>Publication type</span>
+            <select id="publication-type">
+              <option value="all">All types</option>
+              <option value="first-author">First-author papers</option>
+              <option value="journal">Other journal articles</option>
+              <option value="other">Preprints and conference</option>
+            </select>
+          </label>
+          <label class="publication-control" for="publication-year">
+            <span>Year</span>
+            <select id="publication-year">
+              <option value="all">All years</option>
+            </select>
+          </label>
+          <p class="publication-results" data-publication-results aria-live="polite"></p>
         </div>
-        <ul class="publication-list">
-          <li class="publication selected">
+
+        <p class="publication-empty" data-publication-empty>No publications match the selected filters.</p>
+
+        <div class="publication-group featured" data-publication-group>
+          <div class="section-header">
+            <h2>Selected First-Author Publications</h2>
+            <p>PDF files are available for the five first-author journal papers included in the local materials folder.</p>
+          </div>
+          <ul class="publication-list" data-publication-list data-publication-type="first-author">
+          <li class="publication selected" id="yang-2024-staircases">
             <article>
               <h3>Disruptions in thermohaline staircases caused by subsurface mesoscale eddies in the eastern Caribbean Sea</h3>
               <p class="authors"><strong>Yang, Shun</strong>; Zhang, Kun; Song, Haibin; Ruddick, Barry; Liu, Mengli; Meng, Linghan</p>
@@ -65,9 +99,9 @@
   doi = {10.1038/s43247-024-01577-3}
 }</pre></details>
             </article>
-            <a class="pub-thumb" href="assets/publications/Article2024CEE.pdf"><img src="images/publications/article-2024-cee.png" alt="Thumbnail of the 2024 Communications Earth and Environment paper"></a>
+            <a class="pub-thumb" href="assets/publications/Article2024CEE.pdf"><img src="images/publications/article-2024-cee.webp" width="678" height="900" loading="lazy" decoding="async" alt="Thumbnail of the 2024 Communications Earth and Environment paper"></a>
           </li>
-          <li class="publication selected">
+          <li class="publication selected" id="yang-2023-enhanced">
             <article>
               <h3>Enhanced mixing at the edges of mesoscale eddies observed from high-resolution seismic data in the western Arctic Ocean</h3>
               <p class="authors"><strong>Yang, Shun</strong>; Song, Haibin; Coakley, Bernard; Zhang, Kun</p>
@@ -87,9 +121,9 @@
   doi = {10.1029/2023JC019964}
 }</pre></details>
             </article>
-            <a class="pub-thumb" href="assets/publications/Article2023JGR-Oceans.pdf"><img src="images/publications/article-2023-jgr.png" alt="Thumbnail of the 2023 JGR Oceans paper"></a>
+            <a class="pub-thumb" href="assets/publications/Article2023JGR-Oceans.pdf"><img src="images/publications/article-2023-jgr.webp" width="687" height="900" loading="lazy" decoding="async" alt="Thumbnail of the 2023 JGR Oceans paper"></a>
           </li>
-          <li class="publication selected">
+          <li class="publication selected" id="yang-2022-mesoscale">
             <article>
               <h3>A mesoscale eddy with submesoscale spiral bands observed from seismic reflection sections in the Northwind Basin, Arctic Ocean</h3>
               <p class="authors"><strong>Yang, Shun</strong>; Song, Haibin; Coakley, Bernard; Zhang, Kun; Fan, Wenhao</p>
@@ -109,9 +143,9 @@
   doi = {10.1029/2021JC017984}
 }</pre></details>
             </article>
-            <a class="pub-thumb" href="assets/publications/Article2022JGR-Oceans.pdf"><img src="images/publications/article-2022-jgr.png" alt="Thumbnail of the 2022 JGR Oceans paper"></a>
+            <a class="pub-thumb" href="assets/publications/Article2022JGR-Oceans.pdf"><img src="images/publications/article-2022-jgr.webp" width="687" height="900" loading="lazy" decoding="async" alt="Thumbnail of the 2022 JGR Oceans paper"></a>
           </li>
-          <li class="publication selected">
+          <li class="publication selected" id="yang-2022-aps">
             <article>
               <h3>Research on submesoscale eddy and front near the South Shetland Islands (Antarctic Peninsula) using seismic oceanography data</h3>
               <p class="authors"><strong>Yang, Shun</strong>; Song, Haibin; Zhang, Kun</p>
@@ -131,9 +165,9 @@
   doi = {10.13679/j.advps.2021.0004}
 }</pre></details>
             </article>
-            <a class="pub-thumb" href="assets/publications/Article2021APS.pdf"><img src="images/publications/article-2021-aps.png" alt="Thumbnail of the 2022 Advances in Polar Science paper"></a>
+            <a class="pub-thumb" href="assets/publications/Article2021APS.pdf"><img src="images/publications/article-2021-aps.webp" width="637" height="900" loading="lazy" decoding="async" alt="Thumbnail of the 2022 Advances in Polar Science paper"></a>
           </li>
-          <li class="publication selected">
+          <li class="publication selected" id="yang-2021-papagayo">
             <article>
               <h3>中美洲鹦鹉湾气旋涡的亚中尺度结构特征</h3>
               <p class="authors"><strong>杨顺</strong>; 宋海斌; 范文豪; 吴迪</p>
@@ -153,13 +187,14 @@
   doi = {10.6038/cjg2021O0204}
 }</pre></details>
             </article>
-            <a class="pub-thumb" href="assets/publications/Article2021CJG.pdf"><img src="images/publications/article-2021-cjg.png" alt="Thumbnail of the 2021 Chinese Journal of Geophysics paper"></a>
+            <a class="pub-thumb" href="assets/publications/Article2021CJG.pdf"><img src="images/publications/article-2021-cjg.webp" width="607" height="900" loading="lazy" decoding="async" alt="Thumbnail of the 2021 Chinese Journal of Geophysics paper"></a>
           </li>
-        </ul>
+          </ul>
+        </div>
 
-        <div class="publication-group">
+        <div class="publication-group" data-publication-group>
           <h2>Published Journal Articles</h2>
-          <ul class="publication-list">
+          <ul class="publication-list" data-publication-list data-publication-type="journal">
             <li class="publication">
               <article>
                 <h3>Spatial variation of diapycnal mixing estimated from high-resolution seismic images of subsurface eddies, Bering Sea</h3>
@@ -338,9 +373,9 @@
           </ul>
         </div>
 
-        <div class="publication-group">
+        <div class="publication-group" data-publication-group>
           <h2>Preprints, Posters, and Conference Contributions</h2>
-          <ul class="publication-list">
+          <ul class="publication-list" data-publication-list data-publication-type="other">
             <li class="publication"><article><h3>High-frequency internal waves, high-mode nonlinear waves and K-H billows on the South China Sea's shelf revealed by marine seismic observation</h3><p class="authors">Meng, L.; Song, H.; Guan, Y.; <strong>Yang, S.</strong>; Zhang, K.; Liu, M.</p><p class="journal">EGUsphere preprint, 2024.</p><div class="actions"><a class="button" href="https://doi.org/10.5194/egusphere-2024-92">DOI</a></div></article></li>
             <li class="publication"><article><h3>Mesoscale eddies and enhanced mixing at the edges of them observed from high-resolution seismic data in the Western Arctic Ocean</h3><p class="authors"><strong>Yang, S.</strong>; Song, H.; Coakley, B.; Zhang, K.</p><p class="journal">Poster, 2023.</p></article></li>
             <li class="publication"><article><h3>A mesoscale eddy with submesoscale spiral bands observed from seismic reflection sections in the Northwind Basin, Arctic Ocean</h3><p class="authors"><strong>Yang, S.</strong>; Song, H.; Coakley, B.; Zhang, K.; Fan, W.</p><p class="journal">Ocean Science Meeting 2022 poster, 2022.</p><div class="actions"><a class="button" href="https://doi.org/10.13140/RG.2.2.10018.09926">DOI</a></div></article></li>
@@ -371,6 +406,6 @@
     </div>
   </footer>
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=20260718-3"></script>
 </body>
 </html>

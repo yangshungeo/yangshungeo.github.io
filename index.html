@@ -4,8 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Shun Yang's personal academic homepage in seismic oceanography and marine geophysics.">
+  <meta name="theme-color" content="#082b66">
   <title>Shun Yang | Seismic Oceanography & Marine Geophysics</title>
-  <link rel="stylesheet" href="css/style.css?v=20260704-2335">
+  <link rel="canonical" href="https://yangshungeo.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Shun Yang | Seismic Oceanography & Marine Geophysics">
+  <meta property="og:description" content="Personal academic homepage of Shun Yang, focusing on seismic oceanography, marine geophysics, mesoscale eddies, and ocean mixing.">
+  <meta property="og:url" content="https://yangshungeo.github.io/">
+  <meta property="og:image" content="https://yangshungeo.github.io/images/profile.webp">
+  <meta property="profile:first_name" content="Shun">
+  <meta property="profile:last_name" content="Yang">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/style.css?v=20260718-3">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shun Yang",
+    "url": "https://yangshungeo.github.io/",
+    "image": "https://yangshungeo.github.io/images/profile.webp",
+    "jobTitle": "Engineer",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Guangzhou Marine Geological Survey"
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Tongji University", "url": "https://www.tongji.edu.cn/"},
+      {"@type": "CollegeOrUniversity", "name": "China University of Geosciences", "url": "https://www.cug.edu.cn/"}
+    ],
+    "sameAs": [
+      "https://orcid.org/0000-0002-6008-4782",
+      "https://www.researchgate.net/profile/Shun-Yang",
+      "https://github.com/yangshungeo"
+    ],
+    "knowsAbout": ["Seismic oceanography", "Marine geophysics", "Mesoscale eddies", "Thermohaline fine structure", "Ocean mixing"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -16,8 +51,8 @@
         <span>Seismic Oceanography</span>
       </a>
       <div class="nav-right">
-        <div class="nav-links">
-          <a class="active" href="index.html">Home</a>
+        <div class="nav-links" id="primary-navigation">
+          <a class="active" href="index.html" aria-current="page">Home</a>
           <a href="research.html">Research</a>
           <a href="publications.html">Publications</a>
           <a href="awards.html">Awards</a>
@@ -27,7 +62,7 @@
           <a href="guestbook.html">Guestbook</a>
         </div>
         <button class="language-toggle" type="button" data-lang-toggle aria-label="Switch language">中文</button>
-        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span></button>
       </div>
     </nav>
   </header>
@@ -39,14 +74,11 @@
         <h1>Shun Yang</h1>
         <p class="hero-subtitle">
           <span>Ph.D. | Engineer</span>
-          <span>Marine Geophysics | Seismic Oceanography</span>
         </p>
         <ul class="keywords" aria-label="Research keywords">
           <li>Seismic Oceanography</li>
           <li>Marine Geophysics</li>
-          <li>Physical Oceanography</li>
           <li>Mesoscale Eddies</li>
-          <li>Thermohaline Fine Structure</li>
           <li>Ocean Mixing</li>
         </ul>
         <p class="hero-text">I study oceanic fine structures and dynamical processes using multichannel seismic reflection data, hydrographic observations, satellite altimetry, and ocean reanalysis products.</p>
@@ -93,25 +125,25 @@
         <div class="grid four">
           <article class="card">
             <div class="card-body">
-              <h3>Seismic Oceanography</h3>
+              <h3><a href="research.html#seismic-oceanography">Seismic Oceanography</a></h3>
               <p>Using multichannel seismic reflection data to image thermohaline structures and dynamical processes with high lateral resolution.</p>
             </div>
           </article>
           <article class="card">
             <div class="card-body">
-              <h3>Mesoscale Eddies</h3>
+              <h3><a href="research.html#mesoscale-eddies">Mesoscale Eddies</a></h3>
               <p>Investigating the structure, evolution, and mixing signatures of mesoscale and subsurface eddies in the ocean interior.</p>
             </div>
           </article>
           <article class="card">
             <div class="card-body">
-              <h3>Thermohaline Fine Structure</h3>
+              <h3><a href="research.html#thermohaline-fine-structure">Thermohaline Fine Structure</a></h3>
               <p>Studying staircases, intrusions, fronts, and layered water-mass boundaries revealed by seismic and hydrographic observations.</p>
             </div>
           </article>
           <article class="card">
             <div class="card-body">
-              <h3>Ocean Mixing</h3>
+              <h3><a href="research.html#ocean-mixing">Ocean Mixing</a></h3>
               <p>Estimating diapycnal mixing and energy transfer using seismic slope spectra, hydrographic constraints, and turbulence parameterizations.</p>
             </div>
           </article>
@@ -150,23 +182,29 @@
         </div>
         <div class="grid three">
           <article class="card figure-card research-figure">
-            <img src="images/researchfigures/article-2024-cee-figure1.png" alt="Research figure from the 2024 Communications Earth and Environment paper">
+            <a class="figure-link" href="publications.html#yang-2024-staircases" aria-label="View publication details for Disruptions in thermohaline staircases caused by subsurface mesoscale eddies in the eastern Caribbean Sea">
+              <img src="images/researchfigures/article-2024-cee-figure1.webp" width="1290" height="1080" loading="lazy" decoding="async" alt="Research figure from the 2024 Communications Earth and Environment paper">
+            </a>
             <div class="card-body">
-              <h3>Thermohaline staircases and subsurface eddies</h3>
+              <h3><a href="publications.html#yang-2024-staircases">Disruptions in thermohaline staircases caused by subsurface mesoscale eddies in the eastern Caribbean Sea</a></h3>
               <p>Communications Earth & Environment, 2024.</p>
             </div>
           </article>
           <article class="card figure-card research-figure">
-            <img src="images/researchfigures/article-2023-jgr-figure1.png" alt="Research figure from the 2023 JGR Oceans paper">
+            <a class="figure-link" href="publications.html#yang-2023-enhanced" aria-label="View publication details for Enhanced mixing at the edges of mesoscale eddies observed from high-resolution seismic data in the western Arctic Ocean">
+              <img src="images/researchfigures/article-2023-jgr-figure1.webp" width="1130" height="1080" loading="lazy" decoding="async" alt="Research figure from the 2023 JGR Oceans paper">
+            </a>
             <div class="card-body">
-              <h3>Enhanced mixing near Arctic eddy edges</h3>
+              <h3><a href="publications.html#yang-2023-enhanced">Enhanced mixing at the edges of mesoscale eddies observed from high-resolution seismic data in the western Arctic Ocean</a></h3>
               <p>Journal of Geophysical Research: Oceans, 2023.</p>
             </div>
           </article>
           <article class="card figure-card research-figure">
-            <img src="images/researchfigures/article-2022-jgr-figure1.png" alt="Research figure from the 2022 JGR Oceans paper">
+            <a class="figure-link" href="publications.html#yang-2022-mesoscale" aria-label="View publication details for A mesoscale eddy with submesoscale spiral bands observed from seismic reflection sections in the Northwind Basin, Arctic Ocean">
+              <img src="images/researchfigures/article-2022-jgr-figure1.webp" width="1738" height="871" loading="lazy" decoding="async" alt="Research figure from the 2022 JGR Oceans paper">
+            </a>
             <div class="card-body">
-              <h3>Mesoscale eddy with spiral bands</h3>
+              <h3><a href="publications.html#yang-2022-mesoscale">A mesoscale eddy with submesoscale spiral bands observed from seismic reflection sections in the Northwind Basin, Arctic Ocean</a></h3>
               <p>Journal of Geophysical Research: Oceans, 2022.</p>
             </div>
           </article>
@@ -193,6 +231,6 @@
     </div>
   </footer>
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <script src="js/script.js?v=20260704-2335"></script>
+  <script src="js/script.js?v=20260718-3"></script>
 </body>
 </html>
